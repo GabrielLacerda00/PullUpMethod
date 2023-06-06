@@ -1,4 +1,4 @@
-public class CalculadoraCientifica {
+public class CalculadoraCientifica extends Calculadora {
   public int calcular(String operacao, int num1, int num2) {
       int resultado = 0;
       
@@ -16,8 +16,9 @@ public class CalculadoraCientifica {
       
       return resultado;
   }
-
-  private int soma(int num1, int num2) {
+  
+  @Override
+  public int soma(int num1, int num2) {
       return num1 + num2;
   }
 
